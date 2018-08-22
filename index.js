@@ -37,3 +37,22 @@ class Passenger {
     
   }
 }
+
+let tripId = 0;
+
+class Trip {
+  constructor(driver, passenger) {
+    this.driver = driver;
+    this.passenger = passenger;
+    
+    store.trips.push(this);
+  }
+  
+  driver() {
+    
+  }
+  
+  passenger() {
+    
+  }
+}
