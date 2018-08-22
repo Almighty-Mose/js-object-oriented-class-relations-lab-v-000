@@ -49,8 +49,15 @@ class Trip {
     store.trips.push(this);
   }
   
+  // user(){
+  //   return store.users.find(function(user){
+  //     return user.id === this.userId
+  //   })
+  
   driver() {
-    
+    return store.drivers.find(function(driver) {
+      return driver.id === this.driverId;
+    });
   }
   
   passenger() {
