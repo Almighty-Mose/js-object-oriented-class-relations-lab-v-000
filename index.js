@@ -16,12 +16,6 @@ class Driver {
     });
   }
   
-  // items(){
-  //   return store.items.filter(item => {
-  //     return item.userId === this.id
-  //   })
-  // }
-  
   passengers() {
     return this.trips().map(trip => {
       return trip.passenger();
@@ -65,11 +59,6 @@ class Trip {
     store.trips.push(this);
   }
   
-  // user(){
-  //   return store.users.find(function(user){
-  //     return user.id === this.userId
-  //   })
-  
   driver() {
     return store.drivers.find(driver => {
       return driver.id === this.driverId;
@@ -79,6 +68,6 @@ class Trip {
   passenger() {
     return store.passengers.find(passenger => {
       return passenger.id === this.passengerId;
-    })
+    });
   }
 }
