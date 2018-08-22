@@ -11,8 +11,16 @@ class Driver {
   }
   
   trips() {
-    
+    return store.trips.filter(trip => {
+      return trip.driverId === this.id;
+    });
   }
+  
+  // items(){
+  //   return store.items.filter(item => {
+  //     return item.userId === this.id
+  //   })
+  // }
   
   passengers() {
     
